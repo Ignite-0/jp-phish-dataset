@@ -1,0 +1,16 @@
+# Raw data may hold personal info: never commit it
+data/raw/
+models/
+.venv/
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Docs are kept local only
+*.md
+
+# Processed message data stays local; only the manifest is committed
+data/processed/*.parquet

@@ -1,0 +1,24 @@
+[project]
+name = "phishdata"
+version = "0.1.0"
+description = "Japanese/English phishing message dataset: collection, campaign-grouped splits, synthetic generation and leakage checks."
+requires-python = ">=3.11"
+dependencies = [
+    "beautifulsoup4>=4.15.0",
+    "datasketch>=2.0.0",
+    "pandas>=3.1.1",
+    "pyarrow>=26.0.1",
+    "pydantic>=2.14.2",
+    "scikit-learn>=1.9.1",
+]
+
+[build-system]
+requires = ["uv_build>=0.12.18,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.7.0",
+    "pytest>=9.2.0",
+    "ruff>=0.17.3",
+]
